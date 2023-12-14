@@ -1,0 +1,46 @@
+#ad{
+    position: fixed; 
+    width: 18%; height: 65%;
+    bottom: 10px; left: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 60;    /* over the header */
+    background: white;
+    border: 2px solid lightgray;
+    cursor:pointer;
+    display: none;  /* Hide at first */
+}
+#ad__container{
+    display:flex; justify-content: center; align-items: center;
+    width: 100%; height: 100%;
+}
+#ad__container img{width: 100%;}
+#ad__container video{width: 100%;}
+
+#ad__close-btn{
+    position: absolute;
+    top: 5px; right: 5px; 
+    border-radius: 50%; padding: 2px 8px;
+    background: black; color:white;
+    z-index: 2;
+}
+
+#ad__time-bar{
+    position: absolute;
+    width: 100%; height: 5px;
+    bottom: 0; left: 0;
+    background: rgba(0, 100, 255, .5);
+    z-index: 2;
+}
+
+@media (max-width: 1024px) { /* tablet */
+    #ad{
+        width: 23%;
+    }
+}
+
+@media (max-width: 768px) { /* mobile */
+    #ad{
+        width: 35%; height: 32%;
+    }
+}
